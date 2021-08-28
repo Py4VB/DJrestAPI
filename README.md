@@ -1,2 +1,2 @@
 # DJrestAPI
-This is a dmall django based Rest API.
+This is a small django based Rest API.
