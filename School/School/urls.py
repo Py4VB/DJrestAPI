@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+from App1.api import view1, view2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^testapi/$', view1.as_view(), name='view1'),
+    url(r'^testapi/(?P<rollno>\d+)/$', view2.as_view(), name='view2')
 ]
